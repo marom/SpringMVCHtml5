@@ -1,17 +1,23 @@
 package spring.mvc.excelpdf;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+import spring.mvc.bean.DBLogs;
+import spring.mvc.jdbc.JDBCExample;
 
 /**
  * Created by maro on 14/04/16.
  */
 @Controller
 public class ExcelPDFController {
-/*
+
     @Autowired
     private JDBCExample jdbcExample;
 
-    @RequestMapping(value = "/excel", method=RequestMethod.GET)
+    @RequestMapping(value = "/excel", method= RequestMethod.GET)
     public ModelAndView excel() {
         System.out.println("ExcelPDFController excel is called");
         DBLogs dbLogs = new DBLogs();
@@ -27,5 +33,5 @@ public class ExcelPDFController {
         dbLogs.setLogList(jdbcExample.queryAllLogs());
         return new ModelAndView("pdfDocument", "dbLogs",dbLogs);
 
-    }*/
+    }
 }

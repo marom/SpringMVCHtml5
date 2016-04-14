@@ -19,5 +19,12 @@
         <tr><td><b>File:</b></td><td><input type="file" name="file"></td><td><input type="submit" value="Press to upload the File"></td></tr>
     </table>
 </form>
+
+<br/><br/>
+<c:url value="/excel" var="excelController" />
+<a href="${excelController}">Excel</a><br/>
+<c:url value="/pdf" var="PDFController" />
+<a href="${PDFController}">PDF</a>
+
 </body>
 </html>
