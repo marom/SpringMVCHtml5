@@ -18,17 +18,25 @@
         <c:url value="/callMethod" var="callMethod" />
         <a href="${callMethod}">Sample Controller</a><br/>
         <br/>
+
         <c:url value="/controllerWithXmlConfig.html" var="controllerWithXMLConfig" />
         <a href="${controllerWithXMLConfig}">Controller With XML Config</a><br/>
         <br/>
+
         <c:url value="/controllerclassnamehandlermapping.html" var="controllerClassNameMapping" />
         <a href="${controllerClassNameMapping}">ControllerClassNameHandlerMapping</a><br/>
         <br/>
+
         <c:url value="/controllerBeanName.html" var="controllerBeanName"></c:url>
         <a href="${controllerBeanName}">ControllerBeanNameUrlHandlerMapping</a><br/>
         <br/>
+
         <c:url value="/file.html" var="file" />
         <a href="${file}">File Upload Excel and PDF examples</a><br/>
+        <br/>
+
+        <c:url value="/jdbc.html" var="jdbc" />
+        <a href="${jdbc}">JDBC with JdbcTemplates</a><br/>
         <br/>
 
     </div>

@@ -7,8 +7,7 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class ExcelPDFController {
-
-    /*
+/*
     @Autowired
     private JDBCExample jdbcExample;
 
@@ -20,7 +19,7 @@ public class ExcelPDFController {
         return new ModelAndView("excelDocument", "dbLogs",dbLogs);
 
     }
-    @RequestMapping(value = "/pdf", method=RequestMethod.GET)
+    @RequestMapping(value = "/pdf", method= RequestMethod.GET)
     public ModelAndView pdf() {
 
         System.out.println("ExcelPDFController pdf is called");
