@@ -39,6 +39,8 @@
         <a href="${jdbc}">JDBC with JdbcTemplates</a><br/>
         <br/>
 
+        <c:url value="/email.html" var="emailController" />
+        <a href="${emailController}">Spring MVC Email (Velocity Email Templates)</a>
     </div>
 </body>
 </html>
