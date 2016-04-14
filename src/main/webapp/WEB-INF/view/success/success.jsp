@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <strong>${message}</strong> Indicates a successful or positive action.
+    <strong>${message}</strong>
 
 </body>
 </html>

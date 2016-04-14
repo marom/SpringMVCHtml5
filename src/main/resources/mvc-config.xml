@@ -26,6 +26,9 @@
         </property>
     </bean>
 
+    <!-- Controller ControllerClassNameHandlerMapping -->
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+    <bean class="spring.mvc.controller.ControllerClassNameHandlerMapping" />
 
 
 </beans>

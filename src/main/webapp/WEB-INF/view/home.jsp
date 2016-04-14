@@ -20,6 +20,9 @@
         <br/>
         <c:url value="/controllerWithXmlConfig.html" var="controllerWithXMLConfig" />
         <a href="${controllerWithXMLConfig}">Controller With XML Config</a><br/>
+        <br/>
+        <c:url value="/controllerclassnamehandlermapping.html" var="controllerClassNameMapping" />
+        <a href="${controllerClassNameMapping}">ControllerClassNameHandlerMapping</a><br/>
     </div>
 </body>
 </html>
