@@ -9,14 +9,23 @@
 
     <mvc:annotation-driven/>
 
-
-
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
         <property name="prefix" value="/WEB-INF/view/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 
     <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"/>
+
+    <!--Controller with XML configuration-->
+    <bean id="controllerWithXmlConfig" class="spring.mvc.controller.ControllerXmlConfig"/>
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="/controllerWithXmlConfig.html">controllerWithXmlConfig</prop>
+            </props>
+        </property>
+    </bean>
+
 
 
 </beans>

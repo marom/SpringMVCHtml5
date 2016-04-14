@@ -13,9 +13,14 @@
         <!-- Generic properties -->
         <java.version>1.8</java.version>
 
-
         <!-- Spring -->
         <spring-framework.version>4.1.7.RELEASE</spring-framework.version>
+
+        <!-- web -->
+        <servlet.version>3.0.1</servlet.version>
+
+        <!--JUnit tests-->
+        <junit.version>4.12</junit.version>
     </properties>
 
     <dependencies>
@@ -29,7 +34,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -37,6 +42,11 @@
             <artifactId>spring-test</artifactId>
             <version>${spring-framework.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.version}</version>
         </dependency>
     </dependencies>
 </project>
