@@ -24,6 +24,9 @@
           <element id="library" level="project" name="Maven: com.lowagie:itext:2.1.5" />
           <element id="library" level="project" name="Maven: bouncycastle:bcmail-jdk14:138" />
           <element id="library" level="project" name="Maven: bouncycastle:bcprov-jdk14:138" />
+          <element id="library" level="project" name="Maven: org.hsqldb:hsqldb:2.3.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.1.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.1.7.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

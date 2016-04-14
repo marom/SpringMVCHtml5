@@ -9,13 +9,13 @@
 
     <mvc:annotation-driven/>
 
-    <!--Excel and PDF xml view configuration -->
-    <bean class="org.springframework.web.servlet.view.XmlViewResolver">
-         <property name="order" value="0" />
-         <property name="location">
-             <value>/WEB-INF/classes/excel-pdf-config.xml</value>
-         </property>
-      </bean>
+    <!--&lt;!&ndash;Excel and PDF xml view configuration &ndash;&gt;-->
+    <!--<bean class="org.springframework.web.servlet.view.XmlViewResolver">-->
+         <!--<property name="order" value="0" />-->
+         <!--<property name="location">-->
+             <!--<value>/WEB-INF/classes/excel-pdf-config.xml</value>-->
+         <!--</property>-->
+      <!--</bean>-->
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
         <property name="prefix" value="/WEB-INF/view/"/>
