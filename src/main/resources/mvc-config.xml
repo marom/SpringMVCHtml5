@@ -33,4 +33,13 @@
     <!-- Controller BeanNameUrlHandlerMapping -->
     <bean name="/controllerBeanName.html" class="spring.mvc.controller.ControllerBeanNameUrlHandlerMapping" />
 
+
+    <!-- File Upload bean config-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- set the maximum file size in bytes -->
+        <property name="maxUploadSize" value="1000000"/>
+    </bean>
+
+    <mvc:view-controller path="/file.html" view-name="/file/file"/>
+
 </beans>

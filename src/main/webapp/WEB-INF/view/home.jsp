@@ -26,6 +26,10 @@
         <br/>
         <c:url value="/controllerBeanName.html" var="controllerBeanName"></c:url>
         <a href="${controllerBeanName}">ControllerBeanNameUrlHandlerMapping</a>
+
+        <br/>
+        <c:url value="/file.html" var="file" />
+        <a href="${file}"><b>File Upload Excel and PDF examples</b></a>
     </div>
 </body>
 </html>
