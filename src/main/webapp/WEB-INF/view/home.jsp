@@ -23,6 +23,9 @@
         <br/>
         <c:url value="/controllerclassnamehandlermapping.html" var="controllerClassNameMapping" />
         <a href="${controllerClassNameMapping}">ControllerClassNameHandlerMapping</a><br/>
+        <br/>
+        <c:url value="/controllerBeanName.html" var="controllerBeanName"></c:url>
+        <a href="${controllerBeanName}">ControllerBeanNameUrlHandlerMapping</a>
     </div>
 </body>
 </html>

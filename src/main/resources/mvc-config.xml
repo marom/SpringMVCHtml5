@@ -30,5 +30,7 @@
     <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
     <bean class="spring.mvc.controller.ControllerClassNameHandlerMapping" />
 
+    <!-- Controller BeanNameUrlHandlerMapping -->
+    <bean name="/controllerBeanName.html" class="spring.mvc.controller.ControllerBeanNameUrlHandlerMapping" />
 
 </beans>
