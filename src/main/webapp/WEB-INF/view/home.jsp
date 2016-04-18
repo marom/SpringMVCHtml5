@@ -27,7 +27,7 @@
         <a href="${controllerClassNameMapping}">ControllerClassNameHandlerMapping</a><br/>
         <br/>
 
-        <c:url value="/controllerBeanName.html" var="controllerBeanName"></c:url>
+        <c:url value="/controllerBeanName.html" var="controllerBeanName"/>
         <a href="${controllerBeanName}">ControllerBeanNameUrlHandlerMapping</a><br/>
         <br/>
 
@@ -41,6 +41,12 @@
 
         <c:url value="/email.html" var="emailController" />
         <a href="${emailController}">Spring MVC Email (Velocity Email Templates)</a>
+        <br/>
+
+        <c:url value="/rest.html" var="rest" />
+        <a href="${rest}"><b>REST Webservices (JSON XML)</b></a>
+        <br/>
+
     </div>
 </body>
 </html>

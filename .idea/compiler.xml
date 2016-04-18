@@ -25,7 +25,7 @@
         <module name="SpringMVCAngularJsHtml5" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="SpringMVCAngularJsHtml5" target="1.5" />
     </bytecodeTargetLevel>
   </component>

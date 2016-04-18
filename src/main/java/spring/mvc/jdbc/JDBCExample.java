@@ -30,7 +30,7 @@ public class JDBCExample {
 
     //JDBC TEMPLATE INSERT EXAMPLE
     public boolean insertLog(final DBLog log) {
-        System.out.println("JDBCExample: log(final String log) is called");
+        System.out.println("JDBCExample: log(String log) is called");
         final String INSERT_SQL = "INSERT INTO LOG (LOGSTRING) VALUES (?)";
         jdbcTemplate.update(new PreparedStatementCreator() {
             public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
@@ -92,7 +92,7 @@ public class JDBCExample {
     public boolean updateUserEnable(User u, boolean enable)  {
         System.out.println("JDBCExample: updateUserEnable called");
         final String UPDATE_SQL = "UPDATE USER SET ENABLED = ? WHERE USERNAME = ?";
-        int result = jdbcTemplate.update(UPDATE_SQL,new Object[]{enable, u.getUsername()});
+        int result = jdbcTemplate.update(UPDATE_SQL, enable, u.getUsername());
         if (result > 0) {
             System.out.println("User is updated: " + u.getUsername());
             return true;

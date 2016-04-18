@@ -17,7 +17,7 @@
     <bean id="postService" class="spring.mvc.dependency.injection.FacebookPostService" />
 
     <!-- constructor injection -->
-    <bean id="postManager" class="spring.mvc.dependency.injection.PostManager" scope="singleton">
+    <bean id="postManager" class="spring.mvc.dependency.injection.PostManager">
         <constructor-arg name="postService" ref="postService"/>
         <constructor-arg name="enabled" value="true"/>
     </bean>
@@ -66,4 +66,9 @@
     <bean id="velocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
         <property name="resourceLoaderPath" value="/WEB-INF/email-templates/"/>
     </bean>
+
+    <!-- REST template configuration -->
+    <bean id="restTemplate" class="org.springframework.web.client.RestTemplate"/>
+
+
 </beans>
