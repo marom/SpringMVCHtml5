@@ -26,5 +26,9 @@
 calling with the value : <b>${RestTemplateControllerExamplePosts}</b>
 <br/>
 <br/>
+<a href="${RestTemplateControllerExamplePosts1}">@RestTemplateControllerExample/posts/1</a><br/>
+calling with the value : <b>${RestTemplateControllerExamplePosts1}</b>
+<br/>
+<br/>
 </body>
 </html>
