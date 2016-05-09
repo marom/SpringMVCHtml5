@@ -46,11 +46,15 @@
         <c:url value="/rest.html" var="rest" />
         <a href="${rest}">REST Webservices (JSON XML)</a>
         <br/>
-        <br/><c:url value="/orm.html" var="orm" />
+        <br/>
+        <c:url value="/orm.html" var="orm" />
         <a href="${orm}">ORM Hibernate Framework</a>
         <br/>
         <br/>
-
+        <c:url value="/throwRunTimeException.html" var="throwRunTimeException" />
+        <a href="${throwRunTimeException}">Exception Handler</a>
+        <br/>
+        <br/>
     </div>
 </body>
 </html>
