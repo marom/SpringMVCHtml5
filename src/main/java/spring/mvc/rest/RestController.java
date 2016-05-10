@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import spring.mvc.bean.DBLog;
+import spring.mvc.bean.DBLogJSON;
 import spring.mvc.bean.DBLogs;
+import spring.mvc.bean.DBLogsJSON;
 import spring.mvc.service.DBLogService;
 
 import java.util.List;
@@ -34,19 +36,20 @@ public class RestController {
         dbLogs.setLogList(dbLogList);
         return dbLogs;
     }
-//
-//    @RequestMapping(value = "/getAllDBLogsJSON", method = RequestMethod.GET)
-//    public @ResponseBody DBLogsJSON getAllDBLogsJSON() {
-//
-//        List<DBLogJSON> dbLogsJSONList = null;
-//        try {
-//            dbLogsJSONList = dbLogService.queryAllDBLogsJSON();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        System.out.println(dbLogsJSONList);
-//        DBLogsJSON dbLogsJSON = new DBLogsJSON();
-//        dbLogsJSON.setLogList(dbLogsJSONList);
-//        return dbLogsJSON;
-//    }
+
+    @RequestMapping(value = "/getAllDBLogsJSON", method = RequestMethod.GET)
+    public @ResponseBody
+    DBLogsJSON getAllDBLogsJSON() {
+
+        List<DBLogJSON> dbLogsJSONList = null;
+        try {
+            dbLogsJSONList = dbLogService.queryAllDBLogsJSON();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(dbLogsJSONList);
+        DBLogsJSON dbLogsJSON = new DBLogsJSON();
+        dbLogsJSON.setLogList(dbLogsJSONList);
+        return dbLogsJSON;
+    }
 }

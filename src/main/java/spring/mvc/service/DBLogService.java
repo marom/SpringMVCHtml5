@@ -5,6 +5,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 import spring.mvc.bean.DBLog;
+import spring.mvc.bean.DBLogJSON;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -39,7 +40,7 @@ public class DBLogService {
         return dbLogs;
     }
     //JdbcTemplate query with in method RowMapper example
- /*   public List<DBLogJSON> queryAllDBLogsJSON() {
+    public List<DBLogJSON> queryAllDBLogsJSON() {
         System.out.println("DBLogService : queryAllDBLogsJSON() is called");
         final String QUERY_SQL = "SELECT * FROM LOG";
         List<DBLogJSON> dbLogs = this.jdbcTemplate.query(QUERY_SQL, new RowMapper<DBLogJSON>() {
@@ -51,5 +52,5 @@ public class DBLogService {
             }
         });
         return dbLogs;
-    }*/
+    }
 }
