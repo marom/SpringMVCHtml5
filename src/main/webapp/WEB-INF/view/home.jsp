@@ -57,7 +57,12 @@
         <br/>
         <c:url value="/redirectExample.html" var="redirect" />
         <a href="${redirect}">Redirect example</a>
-
+        <br/>
+        <br/>
+        <c:url value="/scope.html" var="scope" />
+        <a href="${scope}">Scope examples</a>
+        <br/>
+        <br/>
 
     </div>
 </body>
