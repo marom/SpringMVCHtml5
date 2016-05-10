@@ -87,7 +87,12 @@
         <br/>
         <c:url value="/security.html" var="security" />
         <a href="${security}">Spring Security</a>
-
+        <br/>
+        <br/>
+        <c:url value="/registerForm" var="registerForm" />
+        <a href="${registerForm}">Spring MVC Form Handling and tags</a>
+        <br/>
+        <br/>
     </div>
 
 <div>
