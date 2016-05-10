@@ -42,6 +42,6 @@ public class CookieController {
             System.out.println(cookie.getName() + " : " + cookie.getValue());
             cookiesStr += cookie.getName() + " : " + cookie.getValue() + "<br/>";
         }
-        return new ModelAndView("/cookie/cookieView", "cookieValue", cookiesStr);
+        return new ModelAndView("/cookies/cookiesView", "cookieValue", cookiesStr);
     }
 }
