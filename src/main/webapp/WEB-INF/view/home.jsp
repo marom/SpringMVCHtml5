@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <%--
   Created by IntelliJ IDEA.
@@ -88,5 +89,12 @@
         <a href="${security}">Spring Security</a>
 
     </div>
+
+<div>
+    <a href="<%=request.getContextPath()%>?language=en">EN</a>
+    <a href="<%=request.getContextPath()%>?language=pl">PL</a>
+    <spring:message code="language"/>
+    <font color="green"><b><spring:message code="welcome.text"/></b></font>
+</div>
 </body>
 </html>
