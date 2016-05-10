@@ -19,8 +19,7 @@
         <a href="${loginURL}">Login</a>
         <br/>
         <br/>
-        <br/>
-        <br/>
+
 
         <security:authorize access="hasAnyRole('ROLE_ADMIN','ROLE_SUPER_USER','ROLE_USER')">
             <span style="color: #568C00;font-size: 12px" ><b>You are logged in as: </b>
@@ -30,7 +29,6 @@
             <b><a style="color: #568C00!important;text-decoration: underline;" href="<c:url value="/j_spring_security_logout"/>">Logout</a></b>
         </security:authorize>
 
-        <br/>
         <br/>
         <br/>
         <br/>
@@ -86,6 +84,8 @@
         <a href="${cookieView}">Cookie and Session Scope examples</a>
         <br/>
         <br/>
+        <c:url value="/security.html" var="security" />
+        <a href="${security}">Spring Security</a>
 
     </div>
 </body>

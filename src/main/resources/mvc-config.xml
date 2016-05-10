@@ -99,5 +99,7 @@
     <mvc:view-controller path="/scope.html" view-name="/scope/scope"/>
     <mvc:view-controller path="/cookieView.html" view-name="/cookie/cookieView"/>
     <mvc:view-controller path="/login.html" view-name="/form/login"/>
+    <mvc:view-controller path="/security.html" view-name="/security/security"/>
+    <mvc:view-controller path="/admin/admin.html" view-name="/admin/admin"/>
 
 </beans>
