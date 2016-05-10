@@ -90,12 +90,14 @@
         <property name="cacheSeconds" value="1"/>
     </bean>
 
-
+    <mvc:view-controller path="/" view-name="/index"/>
+    <mvc:view-controller path="/index.html" view-name="/index"/>
     <mvc:view-controller path="/file.html" view-name="/file/file"/>
     <mvc:view-controller path="/jdbc.html" view-name="/jdbc/jdbc"/>
     <mvc:view-controller path="/rest.html" view-name="/rest/rest"/>
     <mvc:view-controller path="/orm.html" view-name="/orm/orm"/>
     <mvc:view-controller path="/scope.html" view-name="/scope/scope"/>
     <mvc:view-controller path="/cookieView.html" view-name="/cookie/cookieView"/>
+    <mvc:view-controller path="/login.html" view-name="/form/login"/>
 
 </beans>

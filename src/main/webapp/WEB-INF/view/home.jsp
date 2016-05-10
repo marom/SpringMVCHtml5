@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 
 <%--
   Created by IntelliJ IDEA.
@@ -14,6 +15,24 @@
 </head>
 <body>
     <div>
+        <c:url value="/login.html" var="loginURL" />
+        <a href="${loginURL}">Login</a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <security:authorize access="hasAnyRole('ROLE_ADMIN','ROLE_SUPER_USER','ROLE_USER')">
+            <span style="color: #568C00;font-size: 12px" ><b>You are logged in as: </b>
+                <security:authentication property="principal.username"/><br/>
+                <security:authentication property="principal.authorities"/>
+            </span>
+            <b><a style="color: #568C00!important;text-decoration: underline;" href="<c:url value="/j_spring_security_logout"/>">Logout</a></b>
+        </security:authorize>
+
+        <br/>
+        <br/>
+        <br/>
         <br/>
         <c:url value="/callMethod" var="callMethod" />
         <a href="${callMethod}">Sample Controller</a>
