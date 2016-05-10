@@ -16,8 +16,8 @@
 <c:url value="/posts" var="RestTemplateControllerExamplePosts" />
 <c:url value="/posts/1" var="RestTemplateControllerExamplePosts1" />
 <c:url value="/responseStatusError" var="RestTemplateControllerExampleResponseStatusError" />
-<%--<c:url value="/getAllDBLogsXML" var="RestControllerGetAllDBLogsXML" />--%>
-<%--<c:url value="/getAllDBLogsJSON" var="RestControllerGetAllDBLogsJSON" />--%>
+<c:url value="/getAllDBLogsXML" var="RestControllerGetAllDBLogsXML" />
+<c:url value="/getAllDBLogsJSON" var="RestControllerGetAllDBLogsJSON" />
 <h1><b>REST calls</b></h1>
 
 <br/>
@@ -29,6 +29,13 @@ calling with the value : <b>${RestTemplateControllerExamplePosts}</b>
 <a href="${RestTemplateControllerExamplePosts1}">@RestTemplateControllerExample/posts/1</a><br/>
 calling with the value : <b>${RestTemplateControllerExamplePosts1}</b>
 <br/>
+<br/>
+<a href="${RestControllerGetAllDBLogsXML}">@RestController/getAllDBLogsXML</a><br/>
+calling with the value : <b>${RestControllerGetAllDBLogsXML}</b>
+<br/>
+<br/>
+<a href="${RestControllerGetAllDBLogsJSON}">@RestController/getAllDBLogsJSON</a><br/>
+calling with the value : <b>${RestControllerGetAllDBLogsJSON}</b>
 <br/>
 </body>
 </html>

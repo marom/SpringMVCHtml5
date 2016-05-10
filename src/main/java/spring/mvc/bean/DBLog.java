@@ -1,8 +1,12 @@
 package spring.mvc.bean;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by maro on 14/04/16.
  */
+@XmlRootElement
 public class DBLog {
 
     private int IDLOG;
@@ -20,6 +24,7 @@ public class DBLog {
         return IDLOG;
     }
 
+    @XmlElement
     public void setIDLOG(int iDLOG) {
         IDLOG = iDLOG;
     }
@@ -28,6 +33,7 @@ public class DBLog {
         return LOGSTRING;
     }
 
+    @XmlElement
     public void setLOGSTRING(String lOGSTRING) {
         LOGSTRING = lOGSTRING;
     }
