@@ -154,4 +154,9 @@
     <!-- @Scheduled task configuration -->
     <!--<bean id="scheduleTask" class="spring.mvc.schedule.ScheduleTask"/>-->
 
+
+    <bean id="sampleBean" class="spring.mvc.bean.SampleBean">
+        <property name="sampleId" value="4"/>
+        <property name="sampleText" value="sampletext"/>
+    </bean>
 </beans>
