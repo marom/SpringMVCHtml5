@@ -63,6 +63,10 @@
         <a href="${scope}">Scope examples</a>
         <br/>
         <br/>
+        <c:url value="/cookieView.html" var="cookieView" />
+        <a href="${cookieView}">Cookie and Session Scope examples</a>
+        <br/>
+        <br/>
 
     </div>
 </body>
