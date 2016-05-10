@@ -152,6 +152,6 @@
     </bean>
 
     <!-- @Scheduled task configuration -->
-    <bean id="scheduleTask" class="spring.mvc.schedule.ScheduleTask"/>
+    <!--<bean id="scheduleTask" class="spring.mvc.schedule.ScheduleTask"/>-->
 
 </beans>

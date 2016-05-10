@@ -55,6 +55,10 @@
         <a href="${throwRunTimeException}">Exception Handler</a>
         <br/>
         <br/>
+        <c:url value="/redirectExample.html" var="redirect" />
+        <a href="${redirect}">Redirect example</a>
+
+
     </div>
 </body>
 </html>
