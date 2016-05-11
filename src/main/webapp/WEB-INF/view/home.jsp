@@ -93,13 +93,15 @@
         <a href="${registerForm}">Spring MVC Form Handling and tags</a>
         <br/>
         <br/>
+        <c:url value="/html5.html" var="html5" />
+        <a href="${html5}">HTML5</a>
     </div>
 
-<div>
+<footer>
     <a href="<%=request.getContextPath()%>?language=en">EN</a>
     <a href="<%=request.getContextPath()%>?language=pl">PL</a>
     <spring:message code="language"/>
     <font color="green"><b><spring:message code="welcome.text"/></b></font>
-</div>
+</footer>
 </body>
 </html>
