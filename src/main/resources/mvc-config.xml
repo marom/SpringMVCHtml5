@@ -103,5 +103,6 @@
     <mvc:view-controller path="/security.html" view-name="/security/security"/>
     <mvc:view-controller path="/admin/admin.html" view-name="/admin/admin"/>
     <mvc:view-controller path="/html5.html" view-name="/html5/html5"/>
+    <mvc:view-controller path="/audiovideo.html" view-name="/audiovideo/audiovideo"/>
 
 </beans>

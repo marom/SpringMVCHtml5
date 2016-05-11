@@ -112,9 +112,32 @@
                 <option value="IE"  label="Internet Explorer">
             </datalist>
         </article>
+        <article>
+            <b>Article</b>
+            <h1>input range example</h1>
+            <table>
+                <tr><td>range:</td><td><input type="range" id="myvolume" min="1" max="50" value="25" oninput="outputUpdate(value)"></td></tr>
+                <output for="myvolume" id="costam">25</output>
+            </table>
+        </article>
+    </section>
+    <section>
+        <h1>Audio video section starts here</h1>
+        <article>
+            <b>Article</b>
+            <c:url value="/audiovideo.html" var="audiovideo" />
+            <a href="${audiovideo}">Audio Video HTML5</a><br/>
+        </article>
     </section>
     <footer>
         <h1>FOOTER</h1>
     </footer>
+
+<script>
+
+    function outputUpdate(vol) {
+        document.querySelector('#costam').value = vol;
+    }
+</script>
 </body>
 </html>
